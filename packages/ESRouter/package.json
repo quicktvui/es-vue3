@@ -1,0 +1,19 @@
+{
+  "name": "@extscreen/es3-router",
+  "version": "1.2.3",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/src/index.d.ts",
+  "license": "Apache-2.0",
+  "homepage": "http://extscreen.com",
+  "files": [
+    "dist/*.{js,cjs,mjs}",
+    "dist/*"
+  ],
+  "peerDependencies": {
+    "vue": "^3.3.0"
+  },
+  "dependencies": {
+    "@vue/devtools-api": "^6.5.0"
+  }
+}

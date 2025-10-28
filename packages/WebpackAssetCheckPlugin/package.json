@@ -1,0 +1,27 @@
+{
+  "name": "webpack-asset-check-plugin",
+  "version": "1.0.2",
+  "description": "A Webpack plugin to check asset file size and image resolution before compilation.",
+  "main": "lib/index.js",
+  "author": "liulipeng<867140076@qq.com>",
+  "license": "MIT",
+  "keywords": [
+    "webpack",
+    "plugin",
+    "assets",
+    "check",
+    "image",
+    "size",
+    "resolution",
+    "build"
+  ],
+  "peerDependencies": {
+    "webpack": "^5.0.0"
+  },
+  "dependencies": {
+    "sharp": "^0.33.0"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}

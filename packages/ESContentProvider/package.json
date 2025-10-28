@@ -1,0 +1,23 @@
+{
+  "name": "@extscreen/es3-content-provider",
+  "version": "1.0.2",
+  "description": "vue3 content provider",
+  "author": "ExtScreen Team",
+  "homepage": "http://extscreen.com",
+  "license": "Apache-2.0",
+  "entry": "dist/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/src/index.d.ts",
+  "keywords": [
+    "es3-content-provider",
+    "vue3",
+    "content",
+    "provider"
+  ],
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+  }
+}

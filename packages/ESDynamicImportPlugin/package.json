@@ -1,0 +1,22 @@
+{
+  "name": "@extscreen/es3-dynamic-import-plugin",
+  "version": "0.0.5",
+  "description": "vue3 dynamic import plugin",
+  "author": "ExtScreen Team",
+  "homepage": "http://extscreen.com",
+  "license": "Apache-2.0",
+  "entry": "index.js",
+  "main": "index.js",
+  "module": "index.js",
+  "keywords": [
+    "es3-dynamic-import-plugin",
+    "vue3"
+  ],
+  "files": [
+    "index.js",
+    "JsonpChunkLoadingRuntimeModule.js",
+    "LoadScriptRuntimeModule.js"
+  ],
+  "dependencies": {
+  }
+}

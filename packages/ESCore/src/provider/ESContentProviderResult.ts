@@ -1,0 +1,4 @@
+export enum ESContentProviderResult {
+  ES_CONTENT_PROVIDER_RESULT_SUCCESS = 1,
+  ES_CONTENT_PROVIDER_RESULT_ERROR = 0,
+}

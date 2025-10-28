@@ -1,0 +1,26 @@
+{
+  "name": "@extscreen/es3-video-player",
+  "version": "1.0.50",
+  "description": "vue3 video player",
+  "author": "ExtScreen Team",
+  "homepage": "http://extscreen.com",
+  "license": "Apache-2.0",
+  "entry": "dist/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/src/index.d.ts",
+  "keywords": [
+    "es3-video-player",
+    "vue3",
+    "video",
+    "player"
+  ],
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vue-tsc && vite build"
+  },
+  "dependencies": {
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "@extscreen/es3-vue",
+  "version": "2.0.11",
+  "description": "Vue-Next binding for ES native framework",
+  "author": "ExtScreen Team",
+  "homepage": "http://extscreen.com",
+  "license": "Apache-2.0",
+  "entry": "dist/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/src/index.d.ts",
+  "keywords": [
+    "es-vue",
+    "native",
+    "web",
+    "framework",
+    "compiler"
+  ],
+  "files": [
+    "dist/index.js",
+    "dist/src/index.d.ts",
+    "dist/src/*"
+  ],
+  "jest": {
+    "moduleNameMapper": {
+      "^src/(.*)$": "<rootDir>/src/$1",
+      "@hippy-vue-next-style-parser/(.*)$": "<rootDir>/../hippy-vue-next-style-parser/src/$1"
+    },
+    "modulePaths": [
+      "<rootDir>"
+    ],
+    "preset": "ts-jest",
+    "setupFiles": [
+      "<rootDir>/__test__/setup.ts"
+    ],
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/*.test.ts"
+    ],
+    "verbose": true
+  }
+}

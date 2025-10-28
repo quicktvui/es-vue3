@@ -1,0 +1,39 @@
+{
+  "name": "create-extscreen-app",
+  "version": "0.0.7",
+
+  "description": "ExtScreen framework",
+  "author": "ExtScreen Team",
+  "bin": {
+    "create-es-card": "index.js",
+    "cec": "index.js"
+  },
+  "scripts": {
+    "cec": "node ./index.js"
+  },
+  "engines": {
+    "node": "^17.0.0 || >=20.0.0"
+  },
+  "homepage": "http://extscreen.com",
+  "license": "Apache-2.0",
+  "type": "module",
+  "keywords": [
+    "Vue",
+    "framework",
+    "ExtScreen"
+  ],
+  "files": [
+    "dist",
+    "index.js",
+    "template-*/*"
+  ],
+  "devDependencies": {
+    "@types/cross-spawn": "^6.0.3",
+    "@types/minimist": "^1.2.2",
+    "@types/prompts": "^2.4.4",
+    "cross-spawn": "^7.0.3",
+    "kolorist": "^1.8.0",
+    "minimist": "^1.2.8",
+    "prompts": "^2.4.2"
+  }
+}

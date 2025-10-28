@@ -1,0 +1,5 @@
+export enum ESPlayerWindowType {
+  ES_PLAYER_WINDOW_TYPE_SMALL = 1,
+  ES_PLAYER_WINDOW_TYPE_FULL = 2,
+  ES_PLAYER_WINDOW_TYPE_FLOAT = 3,
+}

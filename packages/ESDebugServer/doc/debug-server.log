@@ -1,0 +1,1240 @@
+[ES Debug Server]: webpack-dev-server getCompilerOptions end...:[object Object]
+[ES Debug Server]: webpack-dev-server compilerOptions: {
+  amd: undefined,
+  bail: undefined,
+  cache: { type: 'memory', maxGenerations: Infinity, cacheUnaffected: false },
+  context: '/Users/liulipeng/workspace/vue/template/es-vue3',
+  dependencies: undefined,
+  devServer: {
+    multiple: false,
+    vueDevtools: true,
+    hot: true,
+    liveReload: true,
+    client: { overlay: false },
+    autoLaunchHippyDebug: true,
+    injectJSDevtools: { domains: [] },
+    remote: {
+      protocol: 'http',
+      host: '127.0.0.1',
+      port: 38989,
+      qrcode: false,
+      proxy: ''
+    },
+    devMiddleware: { writeToDisk: true },
+    cb: [Function (anonymous)],
+    id: '8a41d9dff0d5575f06c92d06e1f586ac'
+  },
+  devtool: 'eval-source-map',
+  entry: { index: { import: [Array] } },
+  experiments: {
+    buildHttp: undefined,
+    lazyCompilation: undefined,
+    futureDefaults: false,
+    backCompat: true,
+    syncWebAssembly: false,
+    asyncWebAssembly: false,
+    outputModule: false,
+    layers: false,
+    cacheUnaffected: false,
+    css: undefined,
+    topLevelAwait: true
+  },
+  externals: undefined,
+  externalsPresets: {
+    web: true,
+    node: false,
+    nwjs: false,
+    electron: false,
+    electronMain: false,
+    electronPreload: false,
+    electronRenderer: false
+  },
+  externalsType: 'var',
+  ignoreWarnings: undefined,
+  infrastructureLogging: {
+    stream: Socket {
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: null,
+      _closeAfterHandlingError: false,
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: null,
+      _server: null,
+      _type: 'pipe',
+      fd: 2,
+      _isStdio: true,
+      destroySoon: [Function: destroy],
+      _destroy: [Function: dummyDestroy],
+      [Symbol(async_id_symbol)]: 2,
+      [Symbol(kHandle)]: [Pipe],
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: null,
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kSetNoDelay)]: false,
+      [Symbol(kSetKeepAlive)]: false,
+      [Symbol(kSetKeepAliveInitialDelay)]: 0,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0
+    },
+    level: 'info',
+    debug: false,
+    colors: undefined,
+    appendOnly: true
+  },
+  loader: {
+    target: 'web',
+    environment: {
+      globalThis: false,
+      bigIntLiteral: false,
+      const: false,
+      arrowFunction: false,
+      asyncFunction: false,
+      forOf: false,
+      destructuring: false,
+      optionalChaining: false,
+      nodePrefixForCoreModules: false,
+      templateLiteral: false,
+      dynamicImport: false,
+      dynamicImportInWorker: false,
+      module: false,
+      document: true
+    }
+  },
+  mode: 'development',
+  module: {
+    noParse: undefined,
+    unsafeCache: [Function (anonymous)],
+    parser: { javascript: [Object], asset: [Object] },
+    generator: {},
+    defaultRules: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    rules: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ]
+  },
+  name: undefined,
+  node: { global: true, __filename: 'mock', __dirname: 'mock' },
+  optimization: {
+    runtimeChunk: false,
+    splitChunks: {
+      defaultSizeTypes: [Array],
+      cacheGroups: [Object],
+      hidePathInfo: false,
+      chunks: 'async',
+      usedExports: false,
+      minChunks: 1,
+      minSize: 10000,
+      minRemainingSize: 0,
+      enforceSizeThreshold: 30000,
+      maxAsyncRequests: Infinity,
+      maxInitialRequests: Infinity,
+      automaticNameDelimiter: '-'
+    },
+    emitOnErrors: true,
+    removeAvailableModules: false,
+    removeEmptyChunks: true,
+    mergeDuplicateChunks: true,
+    flagIncludedChunks: false,
+    moduleIds: 'named',
+    chunkIds: 'named',
+    sideEffects: 'flag',
+    providedExports: true,
+    usedExports: false,
+    innerGraph: false,
+    mangleExports: false,
+    concatenateModules: false,
+    avoidEntryIife: false,
+    checkWasmTypes: false,
+    mangleWasmImports: false,
+    portableRecords: false,
+    realContentHash: false,
+    minimize: false,
+    minimizer: [ [Object] ],
+    nodeEnv: 'development'
+  },
+  output: {
+    assetModuleFilename: '[hash][ext][query]',
+    asyncChunks: true,
+    charset: true,
+    chunkFilename: '[id].index.bundle',
+    chunkFormat: 'array-push',
+    chunkLoading: 'jsonp',
+    chunkLoadingGlobal: 'webpackChunkes_vue3',
+    chunkLoadTimeout: 120000,
+    cssFilename: 'index.bundle',
+    cssChunkFilename: '[id].index.bundle',
+    cssHeadDataCompression: false,
+    clean: undefined,
+    compareBeforeEmit: true,
+    crossOriginLoading: false,
+    devtoolFallbackModuleFilenameTemplate: undefined,
+    devtoolModuleFilenameTemplate: undefined,
+    devtoolNamespace: 'es-vue3',
+    environment: {
+      globalThis: false,
+      bigIntLiteral: false,
+      const: false,
+      arrowFunction: false,
+      asyncFunction: false,
+      forOf: false,
+      destructuring: false,
+      optionalChaining: false,
+      nodePrefixForCoreModules: false,
+      templateLiteral: false,
+      dynamicImport: false,
+      dynamicImportInWorker: false,
+      module: false,
+      document: true
+    },
+    enabledChunkLoadingTypes: [ 'jsonp', 'import-scripts' ],
+    enabledLibraryTypes: [],
+    enabledWasmLoadingTypes: [ 'fetch' ],
+    filename: 'index.bundle',
+    globalObject: '(0, eval)("this")',
+    hashDigest: 'hex',
+    hashDigestLength: 20,
+    hashFunction: 'md4',
+    hashSalt: undefined,
+    hotUpdateChunkFilename: '[id].[fullhash].hot-update.js',
+    hotUpdateGlobal: 'webpackHotUpdatees_vue3',
+    hotUpdateMainFilename: '[runtime].[fullhash].hot-update.json',
+    ignoreBrowserWarnings: undefined,
+    iife: true,
+    importFunctionName: 'import',
+    importMetaName: 'import.meta',
+    scriptType: false,
+    library: undefined,
+    module: false,
+    path: '/Users/liulipeng/workspace/vue/template/es-vue3/dist/dev',
+    pathinfo: true,
+    publicPath: 'http://127.0.0.1:38989/',
+    sourceMapFilename: '[file].map[query]',
+    sourcePrefix: undefined,
+    strictModuleErrorHandling: false,
+    strictModuleExceptionHandling: true,
+    trustedTypes: undefined,
+    uniqueName: 'es-vue3',
+    wasmLoading: 'fetch',
+    webassemblyModuleFilename: '[hash].module.wasm',
+    workerPublicPath: '',
+    workerChunkLoading: 'import-scripts',
+    workerWasmLoading: 'fetch'
+  },
+  parallelism: 100,
+  performance: false,
+  plugins: [
+    Plugin {},
+    DefinePlugin { definitions: [Object] },
+    ESDynamicImportPlugin {},
+    CleanWebpackPlugin {
+      dangerouslyAllowCleanPatternsOutsideProject: false,
+      dry: false,
+      verbose: false,
+      cleanStaleWebpackAssets: true,
+      protectWebpackAssets: true,
+      cleanAfterEveryBuildPatterns: [],
+      cleanOnceBeforeBuildPatterns: [Array],
+      currentAssets: [],
+      initialClean: false,
+      outputPath: '/Users/liulipeng/workspace/vue/template/es-vue3/dist/dev',
+      apply: [Function: bound apply],
+      handleInitial: [Function: bound handleInitial],
+      handleDone: [Function: bound handleDone],
+      removeFiles: [Function: bound removeFiles]
+    },
+    HippyHMRPlugin { hotManifestPublicPath: 'http://127.0.0.1:38989/' }
+  ],
+  profile: false,
+  recordsInputPath: false,
+  recordsOutputPath: false,
+  resolve: {
+    byDependency: {
+      wasm: [Object],
+      esm: [Object],
+      loaderImport: [Object],
+      worker: [Object],
+      commonjs: [Object],
+      amd: [Object],
+      loader: [Object],
+      unknown: [Object],
+      undefined: [Object],
+      url: [Object]
+    },
+    cache: true,
+    modules: [ 'node_modules' ],
+    conditionNames: [ 'webpack', 'development', 'browser' ],
+    mainFiles: [ 'index' ],
+    extensions: [ '.js', '.vue', '.json', '.ts' ],
+    aliasFields: [],
+    exportsFields: [ 'exports' ],
+    roots: [ '/Users/liulipeng/workspace/vue/template/es-vue3' ],
+    mainFields: [ 'main' ],
+    importsFields: [ 'imports' ],
+    alias: {
+      src: '/Users/liulipeng/workspace/vue/template/es-vue3/src',
+      '@extscreen/es3-router': '/Users/liulipeng/workspace/vue/template/es-vue3/packages/ESRouter'
+    }
+  },
+  resolveLoader: {
+    cache: true,
+    conditionNames: [ 'loader', 'require', 'node' ],
+    exportsFields: [ 'exports' ],
+    mainFields: [ 'loader', 'main' ],
+    extensions: [ '.js' ],
+    mainFiles: [ 'index' ]
+  },
+  snapshot: {
+    resolveBuildDependencies: { timestamp: true, hash: true },
+    buildDependencies: { timestamp: true, hash: true },
+    resolve: { timestamp: true },
+    module: { timestamp: true },
+    immutablePaths: [],
+    managedPaths: [ '/Users/liulipeng/workspace/vue/template/es-vue3/node_modules/' ],
+    unmanagedPaths: []
+  },
+  stats: {},
+  target: 'browserslist',
+  watch: true,
+  watchOptions: { aggregateTimeout: 1500 }
+}
+[ES Debug Server]: webpack-dev-server options.allowedHosts: auto
+[ES Debug Server]: webpack-dev-server options.bonjour: false
+[ES Debug Server]: webpack-dev-server options.client: { overlay: false }
+[ES Debug Server]: webpack-dev-server options.client.overlay: false
+[ES Debug Server]: webpack-dev-server options.client.reconnect: 10
+[ES Debug Server]: webpack-dev-server options.client.logging: info
+[ES Debug Server]: webpack-dev-server options.compress: true
+[ES Debug Server]: webpack-dev-server options.devMiddleware: { writeToDisk: true }
+[ES Debug Server]: webpack-dev-server options.historyApiFallback: false
+[ES Debug Server]: webpack-dev-server options.hot: true
+[ES Debug Server]: webpack-dev-server options.server: { type: 'http', options: {} }
+[ES Debug Server]: webpack-dev-server options.liveReload: true
+[ES Debug Server]: webpack-dev-server options.open: []
+[ES Debug Server]: webpack-dev-server options.port: undefined
+[ES Debug Server]: webpack-dev-server getStaticItem : {
+  directory: '/Users/liulipeng/workspace/vue/template/es-vue3/public',
+  staticOptions: {},
+  publicPath: [ '/' ],
+  serveIndex: { icons: true },
+  watch: {
+    ignoreInitial: true,
+    persistent: true,
+    followSymlinks: false,
+    atomic: false,
+    alwaysStat: true,
+    ignorePermissionErrors: true,
+    usePolling: false,
+    interval: undefined,
+    ignored: undefined
+  }
+}
+[ES Debug Server]: webpack-dev-server options.static: [
+  {
+    directory: '/Users/liulipeng/workspace/vue/template/es-vue3/public',
+    staticOptions: {},
+    publicPath: [ '/' ],
+    serveIndex: { icons: true },
+    watch: {
+      ignoreInitial: true,
+      persistent: true,
+      followSymlinks: false,
+      atomic: false,
+      alwaysStat: true,
+      ignorePermissionErrors: true,
+      usePolling: false,
+      interval: undefined,
+      ignored: undefined
+    }
+  }
+]
+[ES Debug Server]: webpack-dev-server options.watchFiles: []
+(node:18795) [DEP_WEBPACK_WATCH_WITHOUT_CALLBACK] DeprecationWarning: A 'callback' argument needs to be provided to the 'webpack(options, callback)' function when the 'watch' option is set. There is no way to handle the 'watch' option without a callback.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[ES Debug Server]: webpack-dev-server options.host: localhost
+[ES Debug Server]: webpack-dev-server options.port: 39000
+[ES Debug Server]: webpack-dev-server method:normalizeOptions() end...
+[ES Debug Server]: webpack-dev-server initialize start...
+[ES Debug Server]: webpack-dev-server initialize addHMREntries start...
+[ES Debug Server]: webpack-dev-server initialize addHMREntries end... [
+  '/Users/liulipeng/workspace/vue/template/es-vue3/node_modules/@extscreen/es3-debug-server/dist/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=127.0.0.1&port=38989&pathname=%2Fdebugger-proxy&role=hmr_client&hash=8a41d9dff0d5575f06c92d06e1f586ac&logging=info&hot=true&liveReload=true&progress=false&overlay=false&reconnect=10',
+  '/Users/liulipeng/workspace/vue/template/es-vue3/node_modules/@extscreen/es3-debug-server/dist/webpack-dev-server/client/hot/dev-server.js'
+]
+[ES Debug Server]: webpack-dev-server initialize HMRPluginExists:undefined
+[ES Debug Server]: webpack-dev-server initialize apply HotModuleReplacementPlugin
+[ES Debug Server]: webpack-dev-server initialize setupAdbReverse
+[ES Debug Server]: webpack-dev-server initialize setupHooks
+[ES Debug Server]: webpack-dev-server initialize setupApp
+[ES Debug Server]: webpack-dev-server initialize setupHostHeaderCheck
+[ES Debug Server]: webpack-dev-server initialize setupDevMiddleware
+[ES Debug Server]: webpack-dev-server initialize setupBuiltInRoutes
+[ES Debug Server]: webpack-dev-server initialize setupWatchFiles
+[ES Debug Server]: webpack-dev-server initialize setupFeatures
+[ES Debug Server]: webpack-dev-server watchFiles watchPath:/Users/liulipeng/workspace/vue/template/es-vue3/public watchOptions: {
+  ignoreInitial: true,
+  persistent: true,
+  followSymlinks: false,
+  atomic: false,
+  alwaysStat: true,
+  ignorePermissionErrors: true,
+  usePolling: false,
+  interval: undefined,
+  ignored: undefined
+}
+[ES Debug Server]: webpack-dev-server initialize createServer start...
+[ES Debug Server]: webpack-dev-server initialize createServer end...
+[ES Debug Server]: adb: startAdbProxy start...
+[ES Debug Server]: adb: exec adb cmd...
+[ES Debug Server]: webpack-dev-server server.listen start...
+[ES Debug Server]: adb: startAdbProxy end...
+[ES Debug Server]: webpack-dev-server server.listen end...
+[ES Debug Server]: webpack-dev-server ####################################
+<i> [webpack-dev-server] Project is running at:
+<i> [webpack-dev-server] Loopback: http://localhost:39000/, http://127.0.0.1:39000/
+<i> [webpack-dev-server] Content not from webpack is served from '/Users/liulipeng/workspace/vue/template/es-vue3/public' directory
+[ES Debug Server]: webpack-dev-server ####################################
+[ES Debug Server]: webpack-dev-server end...
+[ES Debug Server]: AllLocalHostname: [
+  '192.168.80.103',
+  'fe80::1',
+  '127.0.0.1',
+  'localhost',
+  '0.0.0.0',
+  '::'
+]
+[ES Debug Server]: 127.0.0.1 isPortInUse: false
+[ES Debug Server]: exec es debug.js...
+[ES Debug Server]: child process list size: 1
+[ES Debug Server]: start debug server end...
+2024-11-14 17:50:57.689 entry info version: 0.0.6-dev.13
+2024-11-14 17:50:57.693 debug-server info start server argv: {"_":[],"port":38989,"entry":"dist/dev/index.bundle","host":"0.0.0.0","open":true,"enableIOS":true,"enable-i-o-s":true,"log":"info","iWDPPort":9000,"i-w-d-p-port":9000,"iWDPStartPort":9200,"i-w-d-p-start-port":9200,"iWDPEndPort":9300,"i-w-d-p-end-port":9300,"env":"hippy","$0":"node_modules/@extscreen/es3-debug-server/dist/index-debug.js"}
+2024-11-14 17:50:57.897 debug-server info es debug steps:
+1. start debug server by run 'npm run es:debug'
+2. start dev server by run 'npm run es:dev'
+3. open es pages with debugMode on mobile/emulator
+4. find connected debug targets on devtools home page: http://localhost:38989/extensions/home.html?env=hippy
+
+find full guide on https://hippyjs.org/#/guide/debug
+2024-11-14 17:50:57.905 router info serve bundle: dist/dev/index.bundle; serve folder: /Users/liulipeng/workspace/vue/template/es-vue3/dist/dev
+[ES Debug Server]: start server argv: {"_":[],"port":38989,"entry":"dist/dev/index.bundle","host":"0.0.0.0","open":true,"enableIOS":true,"enable-i-o-s":true,"log":"info","iWDPPort":9000,"i-w-d-p-port":9000,"iWDPStartPort":9200,"i-w-d-p-start-port":9200,"iWDPEndPort":9300,"i-w-d-p-end-port":9300,"env":"hippy","$0":"node_modules/@extscreen/es3-debug-server/dist/index-debug.js"}
+[ES Debug Server]: debug-server: global.debugAppArgv.tunnel: WS
+[ES Debug Server]: debug-server: init cachePath: /Users/liulipeng/workspace/vue/template/es-vue3/node_modules/@extscreen/es3-debug-server/dist/cache
+[ES Debug Server]: debug-server: init hmrStaticPath: /Users/liulipeng/workspace/vue/template/es-vue3/node_modules/@extscreen/es3-debug-server/dist/hmr
+[ES Debug Server]: debug-server: init importTunnel
+(node:18821) [DEP0147] DeprecationWarning: In future versions of Node.js, fs.rmdir(path, { recursive: true }) will be removed. Use fs.rm(path, { recursive: true }) instead
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[ES Debug Server]: debug-server: init initDbModel
+[ES Debug Server]: debug-server: init initAppClient
+[ES Debug Server]: debug-server  hmrStaticPath: /Users/liulipeng/workspace/vue/template/es-vue3/node_modules/@extscreen/es3-debug-server/dist/hmr
+[ES Debug Server]: debug-server serve bundle: dist/dev/index.bundle; serve folder: /Users/liulipeng/workspace/vue/template/es-vue3/dist/dev
+[ES Debug Server]: start server end...
+[ES Debug Server]: Koa listen start...
+[ES Debug Server]: startTunnel start ...
+[ES Debug Server]: startTunnel end ...
+[ES Debug Server]: debug-server: startChrome start...
+2024-11-14 17:50:58.041 child-process info tunnel option: {"adb_path":"/Users/liulipeng/workspace/vue/template/es-vue3/node_modules/@extscreen/es3-debug-server/dist/build/mac/adb","iwdp":{"iwdp_params":["--no-frontend","--config=null:9000,:9200-9300"],"iwdp_listen_port":9000},"only_use_iwdp":0}
+2024-11-14 17:50:58.042 [Addon][INFO][addonapi.cc][Start:227]initializing...
+[ES Debug Server]: debug-server: startChrome end...
+[ES Debug Server]: adb: startAdbProxy start...
+[ES Debug Server]: adb: exec adb cmd...
+[ES Debug Server]: SocketServer start...
+[ES Debug Server]: Koa listen end...
+[ES Debug Server]: adb: startAdbProxy end...
+[ES Debug Server]: adb: startAdbProxy start...
+[ES Debug Server]: adb: exec adb cmd...
+[ES Debug Server]: startTunnel getDeviceList
+[ES Debug Server]: device-manager: getDeviceList: [
+  {
+    deviceid: '192.168.80.80:5555',
+    devicename: 'frozen',
+    platform: '2',
+    physicalstatus: '1'
+  }
+]
+[ES Debug Server]: device-manager: `selectDevice: 192.168.80.80:5555
+[ES Debug Server]: adb: startAdbProxy end...
+[ES Debug Server]: startTunnel onAppConnect
+[ES Debug Server]: device-manager: onAppConnect [
+  {
+    deviceid: '192.168.80.80:5555',
+    devicename: 'frozen',
+    platform: '2',
+    physicalstatus: '1'
+  }
+]
+[ES Debug Server]: startTunnel onAppDisconnect
+[ES Debug Server]: device-manager: onAppDisconnect: {
+  deviceid: '192.168.80.80:5555',
+  devicename: 'frozen',
+  platform: '2',
+  physicalstatus: '1'
+}
+[ES Debug Server]: getDebugTargets()------------>>>
+2024-11-14 17:50:58.861 child-process info device connected
+[ES Debug Server]: getDebugTargets()------------>>>
+[ES Debug Server]: getDebugTargets()------------>>>
+[ES Debug Server]: getDebugTargets()------------>>>
+[ES Debug Server]: getDebugTargets()------------>>>
+[ES Debug Server]: startTunnel onAppConnect
+[ES Debug Server]: device-manager: onAppConnect [
+  {
+    deviceid: '192.168.80.80:5555',
+    devicename: 'frozen',
+    platform: '2',
+    physicalstatus: '1'
+  }
+]
+[ES Debug Server]: startTunnel onAppDisconnect
+[ES Debug Server]: device-manager: onAppDisconnect: {
+  deviceid: '192.168.80.80:5555',
+  devicename: 'frozen',
+  platform: '2',
+  physicalstatus: '1'
+}
+[ES Debug Server]: getDebugTargets()------------>>>
+[ES Debug Server]: getDebugTargets()------------>>>
+[ES Debug Server]: getDebugTargets()------------>>>
+[ES Debug Server]: startTunnel onAppConnect
+[ES Debug Server]: device-manager: onAppConnect [
+  {
+    deviceid: '192.168.80.80:5555',
+    devicename: 'frozen',
+    platform: '2',
+    physicalstatus: '1'
+  }
+]
+[ES Debug Server]: startTunnel onAppDisconnect
+[ES Debug Server]: device-manager: onAppDisconnect: {
+  deviceid: '192.168.80.80:5555',
+  devicename: 'frozen',
+  platform: '2',
+  physicalstatus: '1'
+}
+(node:18795) [DEP_WEBPACK_MAIN_TEMPLATE_OUTPUT_OPTIONS] DeprecationWarning: MainTemplate.outputOptions is deprecated (use Compilation.outputOptions instead)
+(node:18795) [DEP_WEBPACK_MAIN_TEMPLATE_RENDER_CURRENT_HASH_CODE] DeprecationWarning: MainTemplate.renderCurrentHashCode is deprecated (use RuntimeGlobals.getFullHash runtime function instead)
+(node:18795) [DEP_WEBPACK_MAIN_TEMPLATE_GET_ASSET_PATH] DeprecationWarning: MainTemplate.getAssetPath is deprecated (use Compilation.getAssetPath instead)
+(node:18795) [DEP_WEBPACK_MAIN_TEMPLATE_REQUIRE_FN] DeprecationWarning: MainTemplate.requireFn is deprecated (use "__webpack_require__")
+[ES Debug Server]: getDebugTargets()------------>>>
+[ES Debug Server]: getDebugTargets()------------>>>
+[ES Debug Server]: webpack-dev-server compiler hooks assetEmitted...
+[ES Debug Server]: webpack-dev-server compiler hooks assetEmitted compilation
+[ES Debug Server]: webpack-dev-server compiler hooks assetEmitted emitMap: Map(1) {
+  '/Users/liulipeng/workspace/vue/template/es-vue3/dist/dev/index.bundle' => {
+    name: 'index.bundle',
+    content: <Buffer 2f 2a 0a 20 2a 20 41 54 54 45 4e 54 49 4f 4e 3a 20 41 6e 20 22 65 76 61 6c 2d 73 6f 75 72 63 65 2d 6d 61 70 22 20 64 65 76 74 6f 6f 6c 20 68 61 73 20 ... 15898408 more bytes>,
+    isHMRResource: false
+  }
+}
+[ES Debug Server]: webpack-dev-server compiler hooks assetEmitted...
+[ES Debug Server]: webpack-dev-server compiler hooks assetEmitted compilation
+[ES Debug Server]: webpack-dev-server compiler hooks assetEmitted emitMap: Map(2) {
+  '/Users/liulipeng/workspace/vue/template/es-vue3/dist/dev/index.bundle' => {
+    name: 'index.bundle',
+    content: <Buffer 2f 2a 0a 20 2a 20 41 54 54 45 4e 54 49 4f 4e 3a 20 41 6e 20 22 65 76 61 6c 2d 73 6f 75 72 63 65 2d 6d 61 70 22 20 64 65 76 74 6f 6f 6c 20 68 61 73 20 ... 15898408 more bytes>,
+    isHMRResource: false
+  },
+  '/Users/liulipeng/workspace/vue/template/es-vue3/dist/dev/src_views_async_index_vue.index.bundle' => {
+    name: 'src_views_async_index_vue.index.bundle',
+    content: <Buffer 2f 2a 0a 20 2a 20 41 54 54 45 4e 54 49 4f 4e 3a 20 41 6e 20 22 65 76 61 6c 2d 73 6f 75 72 63 65 2d 6d 61 70 22 20 64 65 76 74 6f 6f 6c 20 68 61 73 20 ... 43218 more bytes>,
+    isHMRResource: false
+  }
+}
+[ES Debug Server]: webpack-dev-server compiler hooks assetEmitted...
+[ES Debug Server]: webpack-dev-server compiler hooks assetEmitted compilation
+[ES Debug Server]: webpack-dev-server compiler hooks assetEmitted emitMap: Map(3) {
+  '/Users/liulipeng/workspace/vue/template/es-vue3/dist/dev/index.bundle' => {
+    name: 'index.bundle',
+    content: <Buffer 2f 2a 0a 20 2a 20 41 54 54 45 4e 54 49 4f 4e 3a 20 41 6e 20 22 65 76 61 6c 2d 73 6f 75 72 63 65 2d 6d 61 70 22 20 64 65 76 74 6f 6f 6c 20 68 61 73 20 ... 15898408 more bytes>,
+    isHMRResource: false
+  },
+  '/Users/liulipeng/workspace/vue/template/es-vue3/dist/dev/src_views_async_index_vue.index.bundle' => {
+    name: 'src_views_async_index_vue.index.bundle',
+    content: <Buffer 2f 2a 0a 20 2a 20 41 54 54 45 4e 54 49 4f 4e 3a 20 41 6e 20 22 65 76 61 6c 2d 73 6f 75 72 63 65 2d 6d 61 70 22 20 64 65 76 74 6f 6f 6c 20 68 61 73 20 ... 43218 more bytes>,
+    isHMRResource: false
+  },
+  '/Users/liulipeng/workspace/vue/template/es-vue3/dist/dev/src_components_es-component_es-component-child-a_vue.index.bundle' => {
+    name: 'src_components_es-component_es-component-child-a_vue.index.bundle',
+    content: <Buffer 2f 2a 0a 20 2a 20 41 54 54 45 4e 54 49 4f 4e 3a 20 41 6e 20 22 65 76 61 6c 2d 73 6f 75 72 63 65 2d 6d 61 70 22 20 64 65 76 74 6f 6f 6c 20 68 61 73 20 ... 64586 more bytes>,
+    isHMRResource: false
+  }
+}
+[ES Debug Server]: webpack-dev-server compiler hooks done...
+[ES Debug Server]: webpack-dev-server WebSocket start...
+[ES Debug Server]: webpack-dev-server WebSocket webSocketURL: ws://127.0.0.1:38989/debugger-proxy?role=hmr_server&hash=8a41d9dff0d5575f06c92d06e1f586ac
+asset index.bundle 15.2 MiB [emitted] (name: index)
+asset src_components_es-component_es-component-child-a_vue.index.bundle 63.1 KiB [emitted]
+asset src_views_async_index_vue.index.bundle 42.3 KiB [emitted]
+runtime modules 46.8 KiB 17 modules
+orphan modules 358 bytes [orphan] 8 modules
+modules by path ./src/components/ 1.29 MiB 1106 modules
+modules by path ./src/views/ 144 KiB 178 modules
+modules by path ./node_modules/ 2.17 MiB 51 modules
+modules by path ./packages/ 133 KiB 10 modules
+modules by path ./src/*.vue 7.87 KiB 7 modules
+modules by path ./src/*.ts 9.94 KiB
+  ./src/main.ts 1.78 KiB [built] [code generated]
+  ./src/routes.ts 8.16 KiB [built] [code generated]
+modules by path ./src/assets/*.png 24.1 KiB
+  ./src/assets/logo.png 9.87 KiB [built] [code generated]
+  ./src/assets/star.png 14.2 KiB [built] [code generated]
+./src/build/BuildConfig.ts 73 bytes [built] [code generated]
+./src/data/SparseArray.ts 2.78 KiB [built] [code generated]
+webpack 5.96.1 compiled successfully in 15116 ms
+[ES Debug Server]: SocketServer onUpgrade: /debugger-proxy?role=hmr_server&hash=8a41d9dff0d5575f06c92d06e1f586ac
+[ES Debug Server]: SocketServer onUpgrade wsUrlParams: {
+  clientId: null,
+  clientRole: 'hmr_server',
+  pathname: '/debugger-proxy',
+  contextName: null,
+  deviceName: null,
+  extensionName: '',
+  hash: '8a41d9dff0d5575f06c92d06e1f586ac',
+  platform: '0'
+}
+[ES Debug Server]: SocketServer onConnection: IncomingMessage {
+  _readableState: ReadableState {
+    state: 137394,
+    highWaterMark: 16384,
+    buffer: BufferList { head: null, tail: null, length: 0 },
+    length: 0,
+    pipes: [],
+    flowing: null,
+    errored: null,
+    defaultEncoding: 'utf8',
+    awaitDrainWriters: null,
+    decoder: null,
+    encoding: null,
+    [Symbol(kPaused)]: null
+  },
+  _events: [Object: null prototype] {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  socket: <ref *1> Socket {
+    connecting: false,
+    _hadError: false,
+    _parent: null,
+    _host: null,
+    _closeAfterHandlingError: false,
+    _readableState: ReadableState {
+      state: 4696,
+      highWaterMark: 16384,
+      buffer: BufferList { head: null, tail: null, length: 0 },
+      length: 0,
+      pipes: [],
+      flowing: true,
+      errored: null,
+      defaultEncoding: 'utf8',
+      awaitDrainWriters: null,
+      decoder: null,
+      encoding: null,
+      [Symbol(kPaused)]: false
+    },
+    _events: [Object: null prototype] {
+      end: [Array],
+      close: [Function: socketOnClose],
+      data: [Function: socketOnData],
+      error: [Function: socketOnError]
+    },
+    _eventsCount: 4,
+    _maxListeners: undefined,
+    _writableState: WritableState {
+      state: 786500,
+      highWaterMark: 16384,
+      defaultEncoding: 'utf8',
+      length: 0,
+      corked: 0,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: [Object],
+      buffered: [],
+      bufferedIndex: 0,
+      pendingcb: 1,
+      errored: null,
+      [Symbol(kOnFinished)]: []
+    },
+    allowHalfOpen: true,
+    _sockname: null,
+    _pendingData: null,
+    _pendingEncoding: '',
+    server: Server {
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      requestTimeout: 300000,
+      headersTimeout: 60000,
+      keepAliveTimeout: 5000,
+      connectionsCheckingInterval: 30000,
+      requireHostHeader: true,
+      joinDuplicateHeaders: undefined,
+      rejectNonStandardBodyWrites: false,
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      _connections: 2,
+      _handle: [TCP],
+      _usingWorkers: false,
+      _workers: [],
+      _unref: false,
+      allowHalfOpen: true,
+      pauseOnConnect: false,
+      noDelay: true,
+      keepAlive: false,
+      keepAliveInitialDelay: 0,
+      highWaterMark: 16384,
+      httpAllowHalfOpen: false,
+      timeout: 0,
+      maxHeadersCount: null,
+      maxRequestsPerSocket: 0,
+      _connectionKey: '4:0.0.0.0:38989',
+      [Symbol(IncomingMessage)]: [Function: IncomingMessage],
+      [Symbol(ServerResponse)]: [Function: ServerResponse],
+      [Symbol(kCapture)]: false,
+      [Symbol(async_id_symbol)]: 376,
+      [Symbol(kUniqueHeaders)]: null,
+      [Symbol(http.server.connections)]: ConnectionsList {},
+      [Symbol(http.server.connectionsCheckingInterval)]: Timeout {
+        _idleTimeout: 30000,
+        _idlePrev: [Timeout],
+        _idleNext: [TimersList],
+        _idleStart: 1296,
+        _onTimeout: [Function: bound checkConnections],
+        _timerArgs: undefined,
+        _repeat: 30000,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 384,
+        [Symbol(triggerId)]: 377
+      }
+    },
+    _server: Server {
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      requestTimeout: 300000,
+      headersTimeout: 60000,
+      keepAliveTimeout: 5000,
+      connectionsCheckingInterval: 30000,
+      requireHostHeader: true,
+      joinDuplicateHeaders: undefined,
+      rejectNonStandardBodyWrites: false,
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      _connections: 2,
+      _handle: [TCP],
+      _usingWorkers: false,
+      _workers: [],
+      _unref: false,
+      allowHalfOpen: true,
+      pauseOnConnect: false,
+      noDelay: true,
+      keepAlive: false,
+      keepAliveInitialDelay: 0,
+      highWaterMark: 16384,
+      httpAllowHalfOpen: false,
+      timeout: 0,
+      maxHeadersCount: null,
+      maxRequestsPerSocket: 0,
+      _connectionKey: '4:0.0.0.0:38989',
+      [Symbol(IncomingMessage)]: [Function: IncomingMessage],
+      [Symbol(ServerResponse)]: [Function: ServerResponse],
+      [Symbol(kCapture)]: false,
+      [Symbol(async_id_symbol)]: 376,
+      [Symbol(kUniqueHeaders)]: null,
+      [Symbol(http.server.connections)]: ConnectionsList {},
+      [Symbol(http.server.connectionsCheckingInterval)]: Timeout {
+        _idleTimeout: 30000,
+        _idlePrev: [Timeout],
+        _idleNext: [TimersList],
+        _idleStart: 1296,
+        _onTimeout: [Function: bound checkConnections],
+        _timerArgs: undefined,
+        _repeat: 30000,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 384,
+        [Symbol(triggerId)]: 377
+      }
+    },
+    parser: null,
+    on: [Function (anonymous)],
+    addListener: [Function (anonymous)],
+    prependListener: [Function: prependListener],
+    setEncoding: [Function: socketSetEncoding],
+    _paused: false,
+    timeout: 0,
+    [Symbol(async_id_symbol)]: 1347,
+    [Symbol(kHandle)]: TCP {
+      reading: true,
+      onconnection: null,
+      _consumed: true,
+      [Symbol(owner_symbol)]: [Circular *1]
+    },
+    [Symbol(lastWriteQueueSize)]: 0,
+    [Symbol(timeout)]: null,
+    [Symbol(kBuffer)]: null,
+    [Symbol(kBufferCb)]: null,
+    [Symbol(kBufferGen)]: null,
+    [Symbol(kCapture)]: false,
+    [Symbol(kSetNoDelay)]: true,
+    [Symbol(kSetKeepAlive)]: false,
+    [Symbol(kSetKeepAliveInitialDelay)]: 0,
+    [Symbol(kBytesRead)]: 0,
+    [Symbol(kBytesWritten)]: 0,
+    [Symbol(websocket)]: WebSocket {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      _binaryType: 'nodebuffer',
+      _closeCode: 1006,
+      _closeFrameReceived: false,
+      _closeFrameSent: false,
+      _closeMessage: <Buffer >,
+      _closeTimer: null,
+      _extensions: {},
+      _paused: false,
+      _protocol: '',
+      _readyState: 1,
+      _receiver: [Receiver],
+      _sender: [Sender],
+      _socket: [Circular *1],
+      _isServer: true,
+      [Symbol(kCapture)]: false
+    }
+  },
+  httpVersionMajor: 1,
+  httpVersionMinor: 1,
+  httpVersion: '1.1',
+  complete: true,
+  rawHeaders: [
+    'Sec-WebSocket-Version',
+    '13',
+    'Sec-WebSocket-Key',
+    'B3bzi2KjPxfZTN+PYy9O2g==',
+    'Connection',
+    'Upgrade',
+    'Upgrade',
+    'websocket',
+    'Sec-WebSocket-Extensions',
+    'permessage-deflate; client_max_window_bits',
+    'Host',
+    '127.0.0.1:38989'
+  ],
+  rawTrailers: [],
+  joinDuplicateHeaders: null,
+  aborted: false,
+  upgrade: true,
+  url: '/debugger-proxy?role=hmr_server&hash=8a41d9dff0d5575f06c92d06e1f586ac',
+  method: 'GET',
+  statusCode: null,
+  statusMessage: null,
+  client: <ref *1> Socket {
+    connecting: false,
+    _hadError: false,
+    _parent: null,
+    _host: null,
+    _closeAfterHandlingError: false,
+    _readableState: ReadableState {
+      state: 4696,
+      highWaterMark: 16384,
+      buffer: BufferList { head: null, tail: null, length: 0 },
+      length: 0,
+      pipes: [],
+      flowing: true,
+      errored: null,
+      defaultEncoding: 'utf8',
+      awaitDrainWriters: null,
+      decoder: null,
+      encoding: null,
+      [Symbol(kPaused)]: false
+    },
+    _events: [Object: null prototype] {
+      end: [Array],
+      close: [Function: socketOnClose],
+      data: [Function: socketOnData],
+      error: [Function: socketOnError]
+    },
+    _eventsCount: 4,
+    _maxListeners: undefined,
+    _writableState: WritableState {
+      state: 786500,
+      highWaterMark: 16384,
+      defaultEncoding: 'utf8',[ES Debug Server]: webpack-dev-server WebSocket open...
+<i> [webpack-dev-server] HMR websocket client is connected.
+[ES Debug Server]: webpack-dev-server sendStatsWithOption start...
+[ES Debug Server]: webpack-dev-server getCompilerOptions end...:[object Object]
+[ES Debug Server]: webpack-dev-server getCompilerOptions end...:[object Object]
+[ES Debug Server]: webpack-dev-server WebSocket sendStatsWithOption start... { hash: '95105ae7f883d27f7d10', errors: [], warnings: [] }
+[ES Debug Server]: webpack-dev-server WebSocket getEmitList: [
+  {
+    name: 'index.bundle',
+    content: <Buffer 2f 2a 0a 20 2a 20 41 54 54 45 4e 54 49 4f 4e 3a 20 41 6e 20 22 65 76 61 6c 2d 73 6f 75 72 63 65 2d 6d 61 70 22 20 64 65 76 74 6f 6f 6c 20 68 61 73 20 ... 15898408 more bytes>,
+    isHMRResource: false
+  },
+  {
+    name: 'src_views_async_index_vue.index.bundle',
+    content: <Buffer 2f 2a 0a 20 2a 20 41 54 54 45 4e 54 49 4f 4e 3a 20 41 6e 20 22 65 76 61 6c 2d 73 6f 75 72 63 65 2d 6d 61 70 22 20 64 65 76 74 6f 6f 6c 20 68 61 73 20 ... 43218 more bytes>,
+    isHMRResource: false
+  },
+  {
+    name: 'src_components_es-component_es-component-child-a_vue.index.bundle',
+    content: <Buffer 2f 2a 0a 20 2a 20 41 54 54 45 4e 54 49 4f 4e 3a 20 41 6e 20 22 65 76 61 6c 2d 73 6f 75 72 63 65 2d 6d 61 70 22 20 64 65 76 74 6f 6f 6c 20 68 61 73 20 ... 64586 more bytes>,
+    isHMRResource: false
+  }
+]
+[ES Debug Server]: webpack-dev-server WebSocket sendStatsWithOption: [
+  {
+    name: 'index.bundle',
+    content: <Buffer 2f 2a 0a 20 2a 20 41 54 54 45 4e 54 49 4f 4e 3a 20 41 6e 20 22 65 76 61 6c 2d 73 6f 75 72 63 65 2d 6d 61 70 22 20 64 65 76 74 6f 6f 6c 20 68 61 73 20 ... 15898408 more bytes>,
+    isHMRResource: false
+  },
+  {
+    name: 'src_views_async_index_vue.index.bundle',
+    content: <Buffer 2f 2a 0a 20 2a 20 41 54 54 45 4e 54 49 4f 4e 3a 20 41 6e 20 22 65 76 61 6c 2d 73 6f 75 72 63 65 2d 6d 61 70 22 20 64 65 76 74 6f 6f 6c 20 68 61 73 20 ... 43218 more bytes>,
+    isHMRResource: false
+  },
+  {
+    name: 'src_components_es-component_es-component-child-a_vue.index.bundle',
+    content: <Buffer 2f 2a 0a 20 2a 20 41 54 54 45 4e 54 49 4f 4e 3a 20 41 6e 20 22 65 76 61 6c 2d 73 6f 75 72 63 65 2d 6d 61 70 22 20 64 65 76 74 6f 6f 6c 20 68 61 73 20 ... 64586 more bytes>,
+    isHMRResource: false
+  }
+]
+<i> [webpack-dev-server] enable HMR
+<i> [webpack-dev-server] enable live reload
+[ES Debug Server]: webpack-dev-server WebSocket sendMessage: {
+  emitList: [
+    {
+      name: 'index.bundle',
+      content: <Buffer 2f 2a 0a 20 2a 20 41 54 54 45 4e 54 49 4f 4e 3a 20 41 6e 20 22 65 76 61 6c 2d 73 6f 75 72 63 65 2d 6d 61 70 22 20 64 65 76 74 6f 6f 6c 20 68 61 73 20 ... 15898408 more bytes>,
+      isHMRResource: false
+    },
+    {
+      name: 'src_views_async_index_vue.index.bundle',
+      content: <Buffer 2f 2a 0a 20 2a 20 41 54 54 45 4e 54 49 4f 4e 3a 20 41 6e 20 22 65 76 61 6c 2d 73 6f 75 72 63 65 2d 6d 61 70 22 20 64 65 76 74 6f 6f 6c 20 68 61 73 20 ... 43218 more bytes>,
+      isHMRResource: false
+    },
+    {
+      name: 'src_components_es-component_es-component-child-a_vue.index.bundle',
+      content: <Buffer 2f 2a 0a 20 2a 20 41 54 54 45 4e 54 49 4f 4e 3a 20 41 6e 20 22 65 76 61 6c 2d 73 6f 75 72 63 65 2d 6d 61 70 22 20 64 65 76 74 6f 6f 6c 20 68 61 73 20 ... 64586 more bytes>,
+      isHMRResource: false
+    }
+  ],
+  messages: [ { type: 'hash', data: '95105ae7f883d27f7d10' }, { type: 'ok' } ],
+  hadSyncBundleResource: false
+}
+
+2024-11-14 17:51:12.467 webpack-util info bundleUrl: http://127.0.0.1:38989/index.bundle?debugUrl=ws%3A%2F%2F127.0.0.1%3A38989%2Fdebugger-proxy
+2024-11-14 17:51:12.471 webpack-util info find debug page on: http://127.0.0.1:38989/extensions/home.html?hash=8a41d9dff0d5575f06c92d06e1f586ac
+2024-11-14 17:51:12.158 hmr-controller info HMR server connected
+
+      length: 0,
+      corked: 0,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: [Object],
+      buffered: [],
+      bufferedIndex: 0,
+      pendingcb: 1,
+      errored: null,
+      [Symbol(kOnFinished)]: []
+    },
+    allowHalfOpen: true,
+    _sockname: null,
+    _pendingData: null,
+    _pendingEncoding: '',
+    server: Server {
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      requestTimeout: 300000,
+      headersTimeout: 60000,
+      keepAliveTimeout: 5000,
+      connectionsCheckingInterval: 30000,
+      requireHostHeader: true,
+      joinDuplicateHeaders: undefined,
+      rejectNonStandardBodyWrites: false,
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      _connections: 2,
+      _handle: [TCP],
+      _usingWorkers: false,
+      _workers: [],
+      _unref: false,
+      allowHalfOpen: true,
+      pauseOnConnect: false,
+      noDelay: true,
+      keepAlive: false,
+      keepAliveInitialDelay: 0,
+      highWaterMark: 16384,
+      httpAllowHalfOpen: false,
+      timeout: 0,
+      maxHeadersCount: null,
+      maxRequestsPerSocket: 0,
+      _connectionKey: '4:0.0.0.0:38989',
+      [Symbol(IncomingMessage)]: [Function: IncomingMessage],
+      [Symbol(ServerResponse)]: [Function: ServerResponse],
+      [Symbol(kCapture)]: false,
+      [Symbol(async_id_symbol)]: 376,
+      [Symbol(kUniqueHeaders)]: null,
+      [Symbol(http.server.connections)]: ConnectionsList {},
+      [Symbol(http.server.connectionsCheckingInterval)]: Timeout {
+        _idleTimeout: 30000,
+        _idlePrev: [Timeout],
+        _idleNext: [TimersList],
+        _idleStart: 1296,
+        _onTimeout: [Function: bound checkConnections],
+        _timerArgs: undefined,
+        _repeat: 30000,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 384,
+        [Symbol(triggerId)]: 377
+      }
+    },
+    _server: Server {
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      requestTimeout: 300000,
+      headersTimeout: 60000,
+      keepAliveTimeout: 5000,
+      connectionsCheckingInterval: 30000,
+      requireHostHeader: true,
+      joinDuplicateHeaders: undefined,
+      rejectNonStandardBodyWrites: false,
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      _connections: 2,
+      _handle: [TCP],
+      _usingWorkers: false,
+      _workers: [],
+      _unref: false,
+      allowHalfOpen: true,
+      pauseOnConnect: false,
+      noDelay: true,
+      keepAlive: false,
+      keepAliveInitialDelay: 0,
+      highWaterMark: 16384,
+      httpAllowHalfOpen: false,
+      timeout: 0,
+      maxHeadersCount: null,
+      maxRequestsPerSocket: 0,
+      _connectionKey: '4:0.0.0.0:38989',
+      [Symbol(IncomingMessage)]: [Function: IncomingMessage],
+      [Symbol(ServerResponse)]: [Function: ServerResponse],
+      [Symbol(kCapture)]: false,
+      [Symbol(async_id_symbol)]: 376,
+      [Symbol(kUniqueHeaders)]: null,
+      [Symbol(http.server.connections)]: ConnectionsList {},
+      [Symbol(http.server.connectionsCheckingInterval)]: Timeout {
+        _idleTimeout: 30000,
+        _idlePrev: [Timeout],
+        _idleNext: [TimersList],
+        _idleStart: 1296,
+        _onTimeout: [Function: bound checkConnections],
+        _timerArgs: undefined,
+        _repeat: 30000,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 384,
+        [Symbol(triggerId)]: 377
+      }
+    },
+    parser: null,
+    on: [Function (anonymous)],
+    addListener: [Function (anonymous)],
+    prependListener: [Function: prependListener],
+    setEncoding: [Function: socketSetEncoding],
+    _paused: false,
+    timeout: 0,
+    [Symbol(async_id_symbol)]: 1347,
+    [Symbol(kHandle)]: TCP {
+      reading: true,
+      onconnection: null,
+      _consumed: true,
+      [Symbol(owner_symbol)]: [Circular *1]
+    },
+    [Symbol(lastWriteQueueSize)]: 0,
+    [Symbol(timeout)]: null,
+    [Symbol(kBuffer)]: null,
+    [Symbol(kBufferCb)]: null,
+    [Symbol(kBufferGen)]: null,
+    [Symbol(kCapture)]: false,
+    [Symbol(kSetNoDelay)]: true,
+    [Symbol(kSetKeepAlive)]: false,
+    [Symbol(kSetKeepAliveInitialDelay)]: 0,
+    [Symbol(kBytesRead)]: 0,
+    [Symbol(kBytesWritten)]: 0,
+    [Symbol(websocket)]: WebSocket {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      _binaryType: 'nodebuffer',
+      _closeCode: 1006,
+      _closeFrameReceived: false,
+      _closeFrameSent: false,
+      _closeMessage: <Buffer >,
+      _closeTimer: null,
+      _extensions: {},
+      _paused: false,
+      _protocol: '',
+      _readyState: 1,
+      _receiver: [Receiver],
+      _sender: [Sender],
+      _socket: [Circular *1],
+      _isServer: true,
+      [Symbol(kCapture)]: false
+    }
+  },
+  _consuming: false,
+  _dumped: false,
+  parser: null,
+  [Symbol(kCapture)]: false,
+  [Symbol(kHeaders)]: {
+    'sec-websocket-version': '13',
+    'sec-websocket-key': 'B3bzi2KjPxfZTN+PYy9O2g==',
+    connection: 'Upgrade',
+    upgrade: 'websocket',
+    'sec-websocket-extensions': 'permessage-deflate; client_max_window_bits',
+    host: '127.0.0.1:38989'
+  },
+  [Symbol(kHeadersCount)]: 12,
+  [Symbol(kTrailers)]: null,
+  [Symbol(kTrailersCount)]: 0
+}
+[ES Debug Server]: SocketServer wsUrlParams: {
+  clientId: null,
+  clientRole: 'hmr_server',
+  pathname: '/debugger-proxy',
+  contextName: null,
+  deviceName: null,
+  extensionName: '',
+  hash: '8a41d9dff0d5575f06c92d06e1f586ac',
+  platform: '0'
+}
+[ES Debug Server]: getDebugTargets()------------>>>
+[ES Debug Server]: startTunnel onAppConnect
+[ES Debug Server]: device-manager: onAppConnect [
+  {
+    deviceid: '192.168.80.80:5555',
+    devicename: 'frozen',
+    platform: '2',
+    physicalstatus: '1'
+  }
+]
+[ES Debug Server]: startTunnel onAppDisconnect
+[ES Debug Server]: device-manager: onAppDisconnect: {
+  deviceid: '192.168.80.80:5555',
+  devicename: 'frozen',
+  platform: '2',
+  physicalstatus: '1'
+}
+[ES Debug Server]: getDebugTargets()------------>>>
+[ES Debug Server]: getDebugTargets()------------>>>
+[ES Debug Server]: getDebugTargets()------------>>>
+[ES Debug Server]: getDebugTargets()------------>>>
+[ES Debug Server]: startTunnel onAppConnect
+[ES Debug Server]: device-manager: onAppConnect [
+  {
+    deviceid: '192.168.80.80:5555',
+    devicename: 'frozen',
+    platform: '2',
+    physicalstatus: '1'
+  }
+]
+[ES Debug Server]: startTunnel onAppDisconnect
+[ES Debug Server]: device-manager: onAppDisconnect: {
+  deviceid: '192.168.80.80:5555',
+  devicename: 'frozen',
+  platform: '2',
+  physicalstatus: '1'
+}
+[ES Debug Server]: getDebugTargets()------------>>>
+[ES Debug Server]: getDebugTargets()------------>>>
+[ES Debug Server]: getDebugTargets()------------>>>
+[ES Debug Server]: startTunnel onAppConnect
+[ES Debug Server]: device-manager: onAppConnect [
+  {
+    deviceid: '192.168.80.80:5555',
+    devicename: 'frozen',
+    platform: '2',
+    physicalstatus: '1'
+  }
+]
+[ES Debug Server]: startTunnel onAppDisconnect
+[ES Debug Server]: device-manager: onAppDisconnect: {
+  deviceid: '192.168.80.80:5555',
+  devicename: 'frozen',
+  platform: '2',
+  physicalstatus: '1'
+}
+[ES Debug Server]: getDebugTargets()------------>>>
+[ES Debug Server]: getDebugTargets()------------>>>
+[ES Debug Server]: getDebugTargets()------------>>>
+[ES Debug Server]: webpack-dev-server WebSocket ping...
+[ES Debug Server]: startTunnel onAppConnect
+[ES Debug Server]: device-manager: onAppConnect [
+  {
+    deviceid: '192.168.80.80:5555',
+    devicename: 'frozen',
+    platform: '2',
+    physicalstatus: '1'
+  }
+]
+[ES Debug Server]: startTunnel onAppDisconnect
+[ES Debug Server]: device-manager: onAppDisconnect: {
+  deviceid: '192.168.80.80:5555',
+  devicename: 'frozen',
+  platform: '2',
+  physicalstatus: '1'
+}
+[ES Debug Server]: getDebugTargets()------------>>>
+[ES Debug Server]: getDebugTargets()------------>>>
+[ES Debug Server]: getDebugTargets()------------>>>
+[ES Debug Server]: getDebugTargets()------------>>>
+[ES Debug Server]: startTunnel onAppConnect
+[ES Debug Server]: device-manager: onAppConnect [
+  {
+    deviceid: '192.168.80.80:5555',
+    devicename: 'frozen',
+    platform: '2',
+    physicalstatus: '1'
+  }
+]
+[ES Debug Server]: startTunnel onAppDisconnect
+[ES Debug Server]: device-manager: onAppDisconnect: {
+  deviceid: '192.168.80.80:5555',
+  devicename: 'frozen',
+  platform: '2',
+  physicalstatus: '1'
+}
+[ES Debug Server]: getDebugTargets()------------>>>
+[ES Debug Server]: getDebugTargets()------------>>>

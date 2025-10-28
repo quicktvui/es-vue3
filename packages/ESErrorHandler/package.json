@@ -1,0 +1,26 @@
+{
+  "name": "@extscreen/es3-error-handler",
+  "version": "0.0.1",
+  "description": "vue3 error handler",
+  "author": "ExtScreen Team",
+  "homepage": "http://extscreen.com",
+  "license": "Apache-2.0",
+  "entry": "dist/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/src/index.d.ts",
+  "keywords": [
+    "es3-error-handler",
+    "vue3",
+    "video",
+    "player"
+  ],
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vue-tsc && vite build"
+  },
+  "dependencies": {
+  }
+}

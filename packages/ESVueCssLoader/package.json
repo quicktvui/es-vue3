@@ -1,0 +1,27 @@
+{
+  "name": "@extscreen/es3-vue-css-loader",
+  "version": "2.0.2",
+  "description": "vue3",
+  "main": "dist/css-loader.js",
+  "exports": {
+    "require": "./dist/css-loader.js"
+  },
+  "keywords": [
+    "vue3"
+  ],
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "loader-utils": "^1.4.1"
+  },
+  "devDependencies": {
+    "@types/loader-utils": "^2.0.6",
+    "ansi-regex": "^5.0.1",
+    "hosted-git-info": "~3.0.8",
+    "lodash": "~4.17.21",
+    "minimist": "^1.2.6",
+    "normalize-url": "^4.5.1",
+    "y18n": "^4.0.1"
+  }
+}

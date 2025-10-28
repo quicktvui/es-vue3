@@ -1,0 +1,55 @@
+#!/usr/bin/env node
+/* eslint-disable import/first -- should add module alias before use */
+import path from 'path';
+import moduleAlias from 'module-alias';
+
+moduleAlias.addAliases({
+  '@debug-server-next': __dirname,
+});
+import yargs from 'yargs';
+import dotenv from 'dotenv';
+
+dotenv.config({path: path.join(__dirname, './.env')});
+import '@debug-server-next/utils/report';
+import {webpack} from '@debug-server-next/app-dev';
+import {getWebpackConfig} from '@debug-server-next/utils/webpack';
+import {Logger} from '@debug-server-next/utils/log';
+import {version} from '../package.json';
+import './process-handler';
+import {info} from "@debug-server-next/logger/log";
+
+const {argv} = yargs
+  .alias('v', 'version')
+  .describe('v', 'show version information ')
+  .alias('h', 'help')
+  .alias('c', 'config')
+  .demand('config')
+  .help()
+  .version()
+  .option('config', {
+    type: 'string',
+    default: '',
+    describe: 'webpack config file ',
+  })
+  .epilog(`Copyright (C) 2017-${new Date().getFullYear()} THL A29 Limited, a Tencent company.`);
+
+//{"_":[],"c":"./scripts/hippy-webpack.dev.js","config":"./scripts/hippy-webpack.dev.js","$0":"/Users/liulipeng/workspace/vue/template/es-vue3/node_modules/.bin/hippy-dev"}
+
+type Argv = typeof argv & {
+  version: string;
+  help: string;
+  config: string;
+};
+const fullArgv = argv as Argv;
+if (fullArgv.help) yargs.showHelp().exit(0, null);
+if (fullArgv.version) yargs.version().exit(0, null);
+
+const log = new Logger('entry');
+log.info('version: %s', version);
+
+(async () => {
+  log.info('start dev argv: %j', fullArgv);
+  info('es dev running....');
+  const webpackConfig = await getWebpackConfig(fullArgv.config);
+  webpack(webpackConfig);
+})();

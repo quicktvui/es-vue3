@@ -1,0 +1,2 @@
+//
+export type ESEventBusArg = any

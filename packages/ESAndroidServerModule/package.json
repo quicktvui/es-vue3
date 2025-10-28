@@ -1,0 +1,23 @@
+{
+  "name": "@extscreen/es3-android-local-server",
+  "version": "0.0.1",
+  "description": "vue3 android http server",
+  "author": "ExtScreen Team",
+  "homepage": "http://extscreen.com",
+  "license": "Apache-2.0",
+  "entry": "dist/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/src/index.d.ts",
+  "keywords": [
+    "es3-android-local-server",
+    "vue3",
+    "device",
+    "info"
+  ],
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+  }
+}

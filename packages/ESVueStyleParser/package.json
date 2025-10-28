@@ -1,0 +1,24 @@
+{
+  "name": "@extscreen/es3-vue-style-parser",
+  "version": "2.0.1",
+  "description": "A css subset parser for es-vue",
+  "author": "ExtScreen Team",
+  "homepage": "http://extscreen.com",
+  "license": "Apache-2.0",
+  "entry": "./src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/src/index.d.ts",
+  "keywords": [
+    "style",
+    "parser"
+  ],
+  "files": [
+    "dist/index.js",
+    "dist/src/index.d.ts",
+    "dist/src/style-parser/color-parser.d.ts",
+    "dist/src/style-parser/css-parser.d.ts"
+  ],
+  "dependencies": {
+    "@vue/shared": "^3.2.21"
+  }
+}

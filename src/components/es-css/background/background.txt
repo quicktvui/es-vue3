@@ -1,0 +1,93 @@
+在 CSS 中，background 是一个简写属性，用于同时设置多个背景相关属性。它是非常强大的工具，可以为元素添加颜色、图像、位置、重复方式等。
+
+⸻
+
+✅ 语法格式
+
+background: [background-color] [background-image] [background-position] / [background-size] [background-repeat] [background-attachment] [background-origin] [background-clip];
+
+这些属性的顺序是有规则但不强制，浏览器能根据类型自动识别。
+
+⸻
+
+✅ 常用属性组合解释
+
+属性	描述
+background-color	背景颜色，例如 red、#fff
+background-image	背景图片，例如 url("a.png")
+background-repeat	背景图是否重复，例如 no-repeat
+background-position	背景图的位置，例如 center center
+background-size	背景图的大小，例如 cover、contain
+background-attachment	滚动行为，例如 fixed、scroll
+background-origin	定义背景图定位区域（如 padding-box）
+background-clip	裁剪背景的区域（如 border-box）
+
+
+⸻
+
+✅ 示例
+
+1. 只设置颜色
+
+div {
+  background: #f0f0f0;
+}
+
+2. 设置图片 + 不重复 + 居中
+
+div {
+  background: url("bg.png") no-repeat center center;
+}
+
+3. 渐变背景
+
+div {
+  background: linear-gradient(to right, #f00, #00f);
+}
+
+4. 多图层背景
+
+div {
+  background:
+    linear-gradient(rgba(255,255,255,0.5), rgba(0,0,0,0.5)),
+    url("bg.jpg");
+  background-size: cover;
+}
+
+
+⸻
+
+✅ 拆开写（更易读）
+
+div {
+  background-color: #fff;
+  background-image: url("bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+⸻
+
+✅ 多背景图层使用规则
+
+你可以用逗号分隔多个图层，从上到下：
+
+div {
+  background-image:
+    linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url("bg.jpg");
+}
+
+
+⸻
+
+🧠 小提示
+	•	渐变背景（linear-gradient, radial-gradient）也是 background-image
+	•	background-size: cover 是制作全屏背景图常用技巧
+	•	使用 background-attachment: fixed 可创建视差滚动背景效果
+
+⸻
+
+如果你有具体应用场景（比如实现透明遮罩、响应式背景图、按钮渐变等），可以告诉我，我可以帮你写出适合的 background 样式。
