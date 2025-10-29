@@ -7,7 +7,6 @@ const watchPlugin = require("./webpack-watch.ts");
 const AssetCheckPlugin = require("webpack-asset-check-plugin");
 
 const pkg = require("../package.json");
-// let cssLoader = "@hippy/vue-css-loader";
 let cssLoader = "@extscreen/es3-vue-css-loader";
 
 module.exports = {
