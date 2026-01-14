@@ -8,10 +8,55 @@ import { info } from "./patch-log";
 // type of style
 type Style = string | Record<string, string | string[]> | null | undefined;
 
+function areStylesEqual(prev: Style, next: Style): boolean {
+  if (prev === next) {
+    return true;
+  }
+  if (!prev || !next) {
+    return false;
+  }
+  if (typeof prev === "string" || typeof next === "string") {
+    return prev === next;
+  }
+  const prevObj = prev as Record<string, string | string[]>;
+  const nextObj = next as Record<string, string | string[]>;
+
+  const prevKeys = Object.keys(prevObj);
+  const nextKeys = Object.keys(nextObj);
+
+  if (prevKeys.length !== nextKeys.length) {
+    return false;
+  }
+
+  for (const key of prevKeys) {
+    const prevValue = prevObj[key];
+    const nextValue = nextObj[key];
+
+    if (prevValue === nextValue) {
+      continue;
+    }
+
+    if (Array.isArray(prevValue) && Array.isArray(nextValue)) {
+      if (prevValue.length !== nextValue.length) {
+        return false;
+      }
+      for (let i = 0; i < prevValue.length; i++) {
+        if (prevValue[i] !== nextValue[i]) {
+          return false;
+        }
+      }
+    } else {
+      return false;
+    }
+  }
+
+  return true;
+}
+
 function isStyleExisted(el: HippyElement, prev: Style, next: Style) {
   const isElementNull = !el;
   const isPrevAndNextNull = !prev && !next;
-  const isPrevEqualToNext = JSON.stringify(prev) === JSON.stringify(next);
+  const isPrevEqualToNext = areStylesEqual(prev, next);
   return isElementNull || isPrevAndNextNull || isPrevEqualToNext;
 }
 
