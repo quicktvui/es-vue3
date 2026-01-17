@@ -6,13 +6,56 @@ import { HippyElement } from "../runtime/element/hippy-element";
 import { info } from "./patch-log";
 
 // type of style
-type Style = string | Record<string, string | string[]> | null | undefined;
+export type Style = string | Record<string, string | string[]> | null | undefined;
 
-function isStyleExisted(el: HippyElement, prev: Style, next: Style) {
-  const isElementNull = !el;
-  const isPrevAndNextNull = !prev && !next;
-  const isPrevEqualToNext = JSON.stringify(prev) === JSON.stringify(next);
-  return isElementNull || isPrevAndNextNull || isPrevEqualToNext;
+export function isStyleExisted(el: HippyElement, prev: Style, next: Style) {
+  if (!el) {
+    return true;
+  }
+  if (!prev && !next) {
+    return true;
+  }
+  if (prev === next) {
+    return true;
+  }
+  if (!prev || !next) {
+    return false;
+  }
+  return areStylesEqual(prev, next);
+}
+
+function areStylesEqual(a: any, b: any): boolean {
+  if (a === b) {
+    return true;
+  }
+  if (typeof a !== "object" || a === null || typeof b !== "object" || b === null) {
+    return false;
+  }
+  if (Array.isArray(a)) {
+    if (!Array.isArray(b) || a.length !== b.length) {
+      return false;
+    }
+    for (let i = 0; i < a.length; i++) {
+      if (!areStylesEqual(a[i], b[i])) {
+        return false;
+      }
+    }
+    return true;
+  }
+  if (Array.isArray(b)) {
+    return false;
+  }
+  const keysA = Object.keys(a);
+  const keysB = Object.keys(b);
+  if (keysA.length !== keysB.length) {
+    return false;
+  }
+  for (const key of keysA) {
+    if (!areStylesEqual(a[key], b[key])) {
+      return false;
+    }
+  }
+  return true;
 }
 
 /**
