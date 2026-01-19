@@ -8,10 +8,48 @@ import { info } from "./patch-log";
 // type of style
 type Style = string | Record<string, string | string[]> | null | undefined;
 
+function areStylesEqual(a: NeedToTyped, b: NeedToTyped): boolean {
+  if (a === b) {
+    return true;
+  }
+  if (!a || !b || typeof a !== "object" || typeof b !== "object") {
+    return a === b;
+  }
+
+  const keysA = Object.keys(a);
+  const keysB = Object.keys(b);
+
+  if (keysA.length !== keysB.length) {
+    return false;
+  }
+
+  for (const key of keysA) {
+    if (!Object.prototype.hasOwnProperty.call(b, key)) {
+      return false;
+    }
+
+    const valA = a[key];
+    const valB = b[key];
+
+    if (valA === valB) {
+      continue;
+    }
+
+    if (typeof valA === "object" && valA !== null && typeof valB === "object" && valB !== null) {
+      if (!areStylesEqual(valA, valB)) {
+        return false;
+      }
+    } else {
+      return false;
+    }
+  }
+  return true;
+}
+
 function isStyleExisted(el: HippyElement, prev: Style, next: Style) {
   const isElementNull = !el;
   const isPrevAndNextNull = !prev && !next;
-  const isPrevEqualToNext = JSON.stringify(prev) === JSON.stringify(next);
+  const isPrevEqualToNext = areStylesEqual(prev, next);
   return isElementNull || isPrevAndNextNull || isPrevEqualToNext;
 }
 
