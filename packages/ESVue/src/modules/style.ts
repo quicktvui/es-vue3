@@ -8,10 +8,45 @@ import { info } from "./patch-log";
 // type of style
 type Style = string | Record<string, string | string[]> | null | undefined;
 
+/**
+ * Compare two style objects for structural equality.
+ * Faster than JSON.stringify and order-independent.
+ *
+ * @param prev - old value
+ * @param next - new value
+ */
+export function areStylesEqual(prev: NeedToTyped, next: NeedToTyped): boolean {
+  if (prev === next) return true;
+  if (!prev || !next) return false;
+  if (typeof prev !== "object" || typeof next !== "object") return false;
+
+  const prevKeys = Object.keys(prev);
+  const nextKeys = Object.keys(next);
+
+  if (prevKeys.length !== nextKeys.length) return false;
+
+  for (const key of prevKeys) {
+    if (next[key] === undefined && !Object.prototype.hasOwnProperty.call(next, key)) {
+      return false;
+    }
+    const pVal = prev[key];
+    const nVal = next[key];
+
+    if (pVal === nVal) continue;
+
+    if (typeof pVal === "object" && pVal !== null && typeof nVal === "object" && nVal !== null) {
+      if (!areStylesEqual(pVal, nVal)) return false;
+    } else {
+      return false;
+    }
+  }
+  return true;
+}
+
 function isStyleExisted(el: HippyElement, prev: Style, next: Style) {
   const isElementNull = !el;
   const isPrevAndNextNull = !prev && !next;
-  const isPrevEqualToNext = JSON.stringify(prev) === JSON.stringify(next);
+  const isPrevEqualToNext = areStylesEqual(prev, next);
   return isElementNull || isPrevAndNextNull || isPrevEqualToNext;
 }
 
