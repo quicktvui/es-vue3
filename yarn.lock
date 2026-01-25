@@ -1374,17 +1374,17 @@
   resolved "https://registry.yarnpkg.com/@extscreen/es3-video-player/-/es3-video-player-1.0.50.tgz#4c6b8049867d9a67c900e43fb3b1b5e13b1d8071"
   integrity sha512-BrUcFrO2xYPoftPjjAntYUzwzKMBMiRB/RkNefsPLMtRv3EqIXymCmexJvKskNcoG91JyF/c5hhS7op0f721rQ==
 
-"@extscreen/es3-vue-css-loader@^2.0.1":
+"@extscreen/es3-vue-css-loader@^2.0.2":
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/@extscreen/es3-vue-css-loader/-/es3-vue-css-loader-2.0.2.tgz#34741e15f08bb69d67cc9b128bf534997456b2ae"
   integrity sha512-YLiedLgN620K8DmPTG2XDYFJfvMZ7roPRYG5cxI27fJ4vafeA5Nn4wNvmXsk6UjiIX9plBRQGZg3FBhEyjgwqA==
   dependencies:
     loader-utils "^1.4.1"
 
-"@extscreen/es3-vue-style-parser@2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@extscreen/es3-vue-style-parser/-/es3-vue-style-parser-2.0.0.tgz#e5909ce25f9819950c0a2130d1d5314efb89a0c7"
-  integrity sha512-4ZWBnaOewH8M7di7WE1SfU8hNIFR4uOHna0sYf9/qvYL1klk/WdrcHzEXSVZfkMah1iu7hPvbSDNb9eXR7E78w==
+"@extscreen/es3-vue-style-parser@2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@extscreen/es3-vue-style-parser/-/es3-vue-style-parser-2.0.1.tgz#17d402a757d3c2ca988a35c73f6b6d48bf7f2f2e"
+  integrity sha512-T+bmL5OD/DGHELjOdb65JQmOw4kD7dBUb1iiE9I7c4oUU51eSptJOusJLaGuD29Lm46mys2zwVBEknzexAFCqw==
   dependencies:
     "@vue/shared" "^3.2.21"
 
@@ -1458,13 +1458,6 @@
   version "0.1.10"
   resolved "https://registry.yarnpkg.com/@hippy/vanilla-js-devtools/-/vanilla-js-devtools-0.1.10.tgz#1480c4503e2fa91f81618f99a8abcfc070423e78"
   integrity sha512-vC2upj3CfO84gESmBL/rckk25b5+O/qCO3R0qVbfS83nk1aZOIpMEqOhDRTdPA5/0vezMjgYsBSHSAl5ApjaWw==
-
-"@hippy/vue-css-loader@^3.3.3":
-  version "3.3.3"
-  resolved "https://registry.yarnpkg.com/@hippy/vue-css-loader/-/vue-css-loader-3.3.3.tgz#b39b8d7c50cc9525f1729a74a0413ad07349337a"
-  integrity sha512-jE2xlAbKBOItAEoAdqYhC783gBPzx4ZVb+KqiXR2LNPsbSjL0jQqlg8IBpFP2c6aVqnRyoWxI9o2PaSxWKwYJA==
-  dependencies:
-    loader-utils "^1.4.1"
 
 "@hippy/vue-devtools@^0.0.1":
   version "0.0.1"
