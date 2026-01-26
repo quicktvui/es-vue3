@@ -4,6 +4,7 @@ import type { NeedToTyped } from "../types";
 import { isNullOrUndefined } from "../util";
 import { HippyElement } from "../runtime/element/hippy-element";
 import { info } from "./patch-log";
+import { areStylesEqual } from "./style-util";
 
 // type of style
 type Style = string | Record<string, string | string[]> | null | undefined;
@@ -11,7 +12,7 @@ type Style = string | Record<string, string | string[]> | null | undefined;
 function isStyleExisted(el: HippyElement, prev: Style, next: Style) {
   const isElementNull = !el;
   const isPrevAndNextNull = !prev && !next;
-  const isPrevEqualToNext = JSON.stringify(prev) === JSON.stringify(next);
+  const isPrevEqualToNext = areStylesEqual(prev, next);
   return isElementNull || isPrevAndNextNull || isPrevEqualToNext;
 }
 
