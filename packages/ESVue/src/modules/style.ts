@@ -8,10 +8,72 @@ import { info } from "./patch-log";
 // type of style
 type Style = string | Record<string, string | string[]> | null | undefined;
 
+function areStylesEqual(prev: any, next: any): boolean {
+  if (prev === next) {
+    return true;
+  }
+  if (!prev || !next) {
+    return false;
+  }
+  const prevIsString = isString(prev);
+  const nextIsString = isString(next);
+
+  if (prevIsString && nextIsString) {
+    return prev === next;
+  }
+  if (prevIsString !== nextIsString) {
+    return false;
+  }
+
+  const prevKeys = Object.keys(prev);
+  const nextKeys = Object.keys(next);
+
+  if (prevKeys.length !== nextKeys.length) {
+    return false;
+  }
+
+  for (const key of prevKeys) {
+    const prevVal = prev[key];
+    const nextVal = next[key];
+
+    if (prevVal === nextVal) {
+      continue;
+    }
+
+    if (Array.isArray(prevVal) && Array.isArray(nextVal)) {
+      if (prevVal.length !== nextVal.length) {
+        return false;
+      }
+      for (let i = 0; i < prevVal.length; i += 1) {
+        const p = prevVal[i];
+        const n = nextVal[i];
+        if (p !== n) {
+          if (typeof p === "object" && p !== null && typeof n === "object" && n !== null) {
+            if (!areStylesEqual(p, n)) return false;
+          } else {
+            return false;
+          }
+        }
+      }
+    } else if (
+      typeof prevVal === "object" &&
+      prevVal !== null &&
+      typeof nextVal === "object" &&
+      nextVal !== null
+    ) {
+      if (!areStylesEqual(prevVal, nextVal)) return false;
+    } else {
+      return false;
+    }
+  }
+
+  return true;
+}
+
 function isStyleExisted(el: HippyElement, prev: Style, next: Style) {
   const isElementNull = !el;
   const isPrevAndNextNull = !prev && !next;
-  const isPrevEqualToNext = JSON.stringify(prev) === JSON.stringify(next);
+  const isPrevEqualToNext = areStylesEqual(prev, next);
   return isElementNull || isPrevAndNextNull || isPrevEqualToNext;
 }
 
