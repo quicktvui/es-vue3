@@ -9,6 +9,7 @@ declare const __ES_VUE_FEATURE_FLAGS__: Partial<{
 
 //----------------------------------------------------------------------------------------
 declare namespace HippyTypes {
+  export type NeedToTyped = any;
   export type __PLATFORM__ = "ios" | "android" | null;
 
   export interface TouchEvent {
